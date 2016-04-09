@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+	<script src="jquery-1.12.0.min.js"></script>
+	<title>Twitter Lexicon</title>
+	<style>
+
+		#chart
+		{
+			height: 25%;
+			left-margin: 20%;
+			right-margin: 20%;
+			background-color: white;
+		}
+
+		#message
+		{
+			position: absolute;
+			top: 65%;
+			left: 35%;
+			background-color: #00a5ce;
+			margin-left: 150px;
+			font-size: 58px;
+			color: white;
+			height: 80px;
+			line-height: 80px;
+		}
+
+		body 
+		{
+			color: #00a5ce;
+			font-family: Helvetica;
+			font-size: 24px;
+			font-style: normal;
+			font-variant: normal;
+			font-weight: 500;
+			line-height: 26.4px;
+		}
+
+
+		.axis path,
+		.axis line {
+			fill: none;
+			stroke: #5C6161;
+			shape-rendering: crispEdges;
+		}
+
+		.line_path
+		{
+			stroke: #3CF;
+			stroke-width: 1px;
+			fill: none;
+			opacity: 0.1;
+		}
+
+		.line_path:hover
+		{
+			stroke: orange;
+			opacity: 1;
+			stroke-width: 2px;
+		}
+
+		.axis text {
+			font-family: sans-serif;
+			font-size: 11px;
+			fill: #5C6161;
+		}
+
+	</style>
+
+	</head>
+
+	<body>
+		<center><h1> Twitter Lexical Analysis </h1></center>
+		<center><div id = "chart">
+			<script src = "lex_chart.js"></script>
+		</div>
+		</center>
+	</body>
+</html>
